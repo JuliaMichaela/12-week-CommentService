@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(161, 134, 134);
+}
+header {
+    text-align: center
+}
+
+.comments_wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    color: white;
+
+}
+
+h2 {
+    color: rgb(72, 72, 233);
+}
+
+button {
+    color: white;
+    background-color: rgb(72, 72, 233);
+}
+.row {
+    color: whitesmoke;
+}

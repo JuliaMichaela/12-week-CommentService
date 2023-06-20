@@ -8,12 +8,62 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Сервис комментариев со спам фильтром</h1>
+    </header>
+    <main>
+        <div class="comments_wrapper">
+            <div class="enterData">
+                <h2>Оставьте ваш комментарий</h2>
+
+                <form class="form">
+                    <div class="row">
+                        <label for="author">Введите ваше Имя:</label><br>
+                        <input type="text" id="author">
+                    </div>
+
+                    <div class="row">
+                        <label for="picture">Введите ссылку вашего аватара:</label><br>
+                        <input type="text" id="picture">
+                    </div>
+
+                    <div class="row">
+                        <label for="comment">Оставьте комментарий</label><br>
+                        <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
+                    </div>
+                
+                    <button class="comment_button">Отправить</button>
+                </form>
+            </div>
+
+            <div>
+                <h2>Чат</h2>
+                <div class="block_comments"></div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+            <h1>ToDo List</h1>
+            <div class="task">
+                <input type="text" placeholder="Enter a new task">
+                <button>Add</button>
+            </div>
+            <ul class="wrapperList"></ul>
+        </div>
+
+
+        <section class="spam__container">
+            <h2 class="spam__title title">Интерфейс для анонимных комментариев</h2>
+            <div class="spam__block">
+                <div class="spam__block-comments"></div>
+                <input class="spam__comments" id="comments" type="text">
+                <button class="spam__button">Отправить</button>
+            </div>
+        </section>
+    </main>
     
-
-
-
-
-
     <script src="./script.js"></script>
 </body>
 </html>
