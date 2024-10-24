@@ -8,6 +8,32 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Сервис комментариев со спам фильтром</h1>
+    <div class="wrapper">
+        <div class="comment">
+            <h2>Оставьте ваш комментарий</h2>
+            <div class="item_comment">
+                <label for="name">Введите ваше Имя</label>
+                <input type="text" id="name"/>
+            </div>
+
+            <div class="item_comment">
+                <label for="image">Введите ссылку вашего аватара</label>
+                <input type="image_link" id="image">
+            </div>
+            <div class="item_comment">
+                <label for="comment">Оставьте комментарий</label>
+                <textarea name="comment" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button id="btn">Отправить</button>
+    
+        </div>
+        <div class="chat"></div>
+        <h2>Чат</h2>
+        <div id="content"></div>
+    </div>
+    
+    
     
     <script src="./app.js"></script>
 </body>

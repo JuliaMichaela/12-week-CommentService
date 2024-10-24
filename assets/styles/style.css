@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment{
+    width: 40vw;
+}
+.chat {
+    width: 20vw;
+}
+
+
+.item_comment {
+    display: flex;
+    flex-direction: column;
+}
