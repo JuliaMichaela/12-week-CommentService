@@ -1,15 +1,10 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+header {
+    text-align: center
 }
 
 .wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .comment{
@@ -19,8 +14,12 @@ body {
     width: 20vw;
 }
 
-
 .item_comment {
     display: flex;
     flex-direction: column;
+}
+
+.image {
+    max-width: 40px;
+    max-height: 40px;
 }
