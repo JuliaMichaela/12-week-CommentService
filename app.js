@@ -15,7 +15,7 @@ function createNewComment () {
     }
 
     const divName = document.createElement('div');
-    divName .innerHTML = checkName (authorName);
+    divName.innerHTML = checkName (authorName);
     chatContent.append(divName);
     divName.classList.add ('item-chat');
     
@@ -23,7 +23,7 @@ function createNewComment () {
     const picture = document.getElementById('picture');
     const imageUser = document.createElement('img');
     imageUser.src = picture.value;
-    divName.prepend(imageUser);
+    chatContent.append(imageUser);
     imageUser.classList.add('image');
 
     const comment = document.querySelector('#usercomment');
@@ -40,7 +40,7 @@ function createNewComment () {
 
     const userComment = document.createElement('p');
     userComment.innerHTML = checkSpam(commentUser);
-    divName.append(userComment);
+    chatContent.append(userComment);
 
     author.value = '';
     picture.value = '';
