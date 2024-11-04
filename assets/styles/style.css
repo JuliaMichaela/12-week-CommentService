@@ -23,3 +23,7 @@ header {
     max-width: 40px;
     max-height: 40px;
 }
+
+#block_name {
+    display: block;
+}
