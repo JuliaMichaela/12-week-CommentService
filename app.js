@@ -40,10 +40,30 @@ function createNewComment () {
     
     
     const picture = document.getElementById('picture');
-    const imageUser = document.createElement('img');
-    imageUser.src = picture.value;
-    chatContent.append(imageUser);
-    imageUser.classList.add('image');
+    
+    if (picture.value==='') {
+        const imageUser = document.createElement('img');
+
+        function getRandomAvatar (){
+            const avatars = [
+                './assets/images/1.png',
+                './assets/images/2.png',
+                './assets/images/3.png',
+                './assets/images/4.png',
+                './assets/images/5.png'
+            ]
+            const randomIndex = Math.floor(Math.random()* avatars.length);
+            return avatars[randomIndex];
+        }
+        imageUser.src = getRandomAvatar();
+        chatContent.append(imageUser);
+        imageUser.classList.add('image');
+    } else {
+        const imageUser = document.createElement('img');
+        imageUser.src = picture.value;
+        chatContent.append(imageUser);
+        imageUser.classList.add('image');
+    }
 
     const comment = document.querySelector('#usercomment');
     const commentUser = comment.value;
