@@ -25,6 +25,6 @@ header {
 }
 
 #block_name {
-    display: block;
     color: blue;
+    /* display: block; */
 }

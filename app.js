@@ -1,3 +1,13 @@
+function toggle (){
+    const divShowName = document.querySelector('#block_name');
+    if (this.checked){
+        divShowName.style.display = 'block';
+    } else {
+        divShowName.style.display = 'none';
+    }
+}
+document.getElementById('showName_yes').onchange = toggle;
+
 function createNewComment () {
     const chatContent = document.querySelector('#chatcontent');
 
