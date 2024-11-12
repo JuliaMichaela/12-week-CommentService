@@ -28,6 +28,8 @@ function createNewComment () {
             return nameCheck;
         }
     
+
+        
         const divName = document.createElement('div');
         divName.innerHTML = checkName (authorName);
         chatContent.append(divName);
