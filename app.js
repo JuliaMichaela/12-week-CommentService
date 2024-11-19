@@ -29,6 +29,8 @@ function createNewComment () {
         }
     
 
+
+
         
         const divName = document.createElement('div');
         divName.innerHTML = checkName (authorName);
