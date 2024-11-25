@@ -27,9 +27,6 @@ function createNewComment () {
             nameCheck = nameCheck.charAt(0).toUpperCase()+ nameCheck.slice(1);
             return nameCheck;
         }
-
-
-        
     
         const divName = document.createElement('div');
         divName.innerHTML = checkName (authorName);
