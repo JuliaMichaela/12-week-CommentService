@@ -53,8 +53,6 @@ function createNewComment () {
     
     if (picture.value==='') {
         const imageUser = document.createElement('img');
-
-
         
         function getRandomAvatar (){
             const avatars = [
